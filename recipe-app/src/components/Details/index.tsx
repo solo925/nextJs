@@ -28,8 +28,8 @@ const RecipeDetailsItem = ({ recipedetail}: { recipedetail: recipedetailsType })
                 <div>
                     <h3>Ingredients</h3>
                     <ul>
-                        {recipedetail?.ingredients.map((Item:string) =>
-                            <li>{Item}</li>
+                        {recipedetail?.ingredients.map((Item:string,index:number) =>
+                            <li key={index}>{Item}</li>
                         )}
                     </ul>
                 </div>

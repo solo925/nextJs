@@ -17,6 +17,7 @@ export default async function RecipePage() {
     }
    
     const recipeList = await fetchListOfRecipes();
+    
 
     return <div>
        <RecipeList recipeList={recipeList} />

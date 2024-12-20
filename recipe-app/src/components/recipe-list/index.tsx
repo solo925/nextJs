@@ -23,7 +23,7 @@ export default function RecipeList({ recipeList}: {recipeList: recipeType[]}) {
             {
                 recipeList && recipeList.length > 0 ?
                     recipeList.map(recipe =>
-                        <Link href={`/details/${recipe.id}`}>
+                        <Link href={`details/${recipe.id}`}>
                      
                         <Card>
                             <CardContent className="bg-white rounded-md cursor-pointer overflow-hidden shadow-md hover:scale-[1,1] transition-all">
